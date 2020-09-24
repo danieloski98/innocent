@@ -18,7 +18,9 @@ export default function Login() {
                 <div className="flex-1 justify-center items-center flex flex-col px-10">
                     <input type="text" placeholder="Email" className="sm:w-full sm:h-12 rounded bg-gray-200 px-4 mt-8 mb-5" />
                     <input type="text" placeholder="Password" className="sm:w-full sm:h-12 rounded bg-gray-200 px-4  mb-5" />
-                    <button className="sm:w-full sm:h-12 rounded bg-yellow-500 px-4  mb-5 text-xs text-white">Submit</button>
+                    <button 
+                    onClick={() => history.push('/home')}
+                    className="sm:w-full sm:h-12 rounded bg-yellow-500 px-4  mb-5 text-xs text-white">Submit</button>
                     <p 
                     onClick={() => history.push('/signup')}
                     className="text-right text-xs text-yellow-500 mt-10">Don't have an account? Sign up</p>
